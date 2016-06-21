@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="col-md-12 bg-primary">
+      <div class="col-md-10 col-md-offset-2">
+          <h2>Welcome to Eve
+          <h6><a href="/login" class="pull-right" style="color:#fff">&nbsp;/&nbsp;&nbsp;登录</a></h6>
+          <h6><a [routerLink]="['/login']" class="pull-right" data-toggle="modal" data-target="#loginModal" style="color:#fff">注册</a></h6>
+          </h2>
+      </div>
+  </div>
+  <div class="container">
+      <div class="col-md-12">
+          <div class="col-md-4">
+              <ul class="nav nav-tabs">
+                  <li role="presentation" class="active"><a [routerLink]="['/dashboard']">Dashboard</a></li>
+                  <li role="presentation"><a href="#/list">List</a></li>
+                  <li role="presentation"><a href="#/page">Page</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
