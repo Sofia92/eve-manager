@@ -3,6 +3,9 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'images':'public/images',
+  'bootstrap': 'public/bootstrap',
+  'font-awesome': 'public/font-awesome'
 };
 
 /** User packages configuration. */
@@ -45,7 +48,10 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'images': 'public/images',
+    'bootstrap': 'public/bootstrap',
+    'font-awesome': 'public/font-awesome'
   },
   packages: cliSystemConfigPackages
 });

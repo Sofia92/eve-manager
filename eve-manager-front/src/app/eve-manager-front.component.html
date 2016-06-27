@@ -1,7 +1,17 @@
 <nav class="navbar navbar-default">
   <div class="col-md-12 bg-primary">
       <div class="col-md-10 col-md-offset-2">
-          <a [routerLink]="['']" class="pull-right loginModal" data-toggle="modal" data-target="#loginModal"><i class="fa fa-remove"></i>注册&nbsp;/&nbsp;&nbsp;登录</a>
+          <a [routerLink]="['']" class="pull-right loginModal" data-toggle="modal" data-target="#loginModal">
+            <div class="btn-group m-t-sm">
+              <a class="btn btn-primary" href="#"><i class="icon-user"></i> User</a>
+              <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-caret-down"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+                  <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+                  <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+              </ul>
+            </div>
+          </a>
           <h3>Welcome to Eve</h3>
       </div>
   </div>
